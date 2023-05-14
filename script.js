@@ -1,10 +1,5 @@
-function checkMode() {
-    let checkbox = document.querySelector("#switch")
-    let background = document.querySelector("#background")
-
-        if (checkbox.checked == false) {
-            checkbox.checked = true;
-        } else{
-            checkbox.checked = false;
-        }
-}
+let theme = document.getElementById('theme');
+theme.addEventListener('click', function() {
+    document.body.classList.toggle("darkmode");
+    document.body.ul.classList.toggle("list-darkmode");
+})
