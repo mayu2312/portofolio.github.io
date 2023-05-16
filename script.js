@@ -1,5 +1,10 @@
-let theme = document.getElementById('theme');
-theme.addEventListener('click', function() {
-    document.body.classList.toggle("darkmode");
-    document.body.ul.classList.toggle("list-darkmode");
-})
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+themeToggle.addEventListener('change', function() {
+    if (this.checked) {
+      body.classList.add('darkMode');
+    } else {
+      body.classList.remove('darkMode');
+    }
+  });
