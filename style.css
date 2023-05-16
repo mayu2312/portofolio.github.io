@@ -24,7 +24,7 @@ body *{
     background-color: rgb(251, 255, 254);
 }
 
-#toggler, .navbar label.drop-menu{
+#toggler, .drop-menu{
     display: none;
 }
 
