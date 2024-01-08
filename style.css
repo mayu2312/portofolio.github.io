@@ -16,20 +16,17 @@ body{
 .container{
     background: linear-gradient(75deg, #2aded2, #610088);
     width: 100%;
-    height: 100vh;
-    position: absolute;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content{
     background: rgba(0, 0, 0, 0.5);
-    width: 90%;
-    height: 95vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     border-radius: 20px;
     border: 2px solid #fff;
+    width: 80%;
 }
 
 li{
@@ -40,11 +37,10 @@ li{
     background: url(./images/logo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px 20px;
     border-radius: 50%;
-    position: absolute;
-    top: 30px;
-    margin-left: 10px;
+    width: 50px;
+    margin: 5px 10px 5px 20px;
+    float: left;
 }
 
 .navbar{
@@ -101,15 +97,6 @@ li{
 .prolog h2{
     color: #dbcc93;
     letter-spacing: 0.05px;
-}
-
-.prolog h2::after{
-    content: "";
-    padding: 1px 150px;
-    border-radius: 50%;
-    background: #000000;
-    position: absolute;
-    margin: 35px 0 0 -320px;
 }
 
 .study{
